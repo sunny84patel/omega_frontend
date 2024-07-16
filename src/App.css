@@ -1,0 +1,236 @@
+/* General styling */
+.app-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+  }
+
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+}
+  nav ul li {
+    padding: 14px 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  nav ul li:hover {
+    background-color: #575757;
+  }
+  
+  /* Home page background image */
+  .home-background {
+    
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* CourseList styling */
+  .course-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-list li {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .course-list button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .course-list button:hover {
+    background-color: #218838;
+  }
+  
+  /* UserDetailForm styling */
+  .user-detail-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .user-detail-form form div {
+    margin-bottom: 10px;
+  }
+  
+  .user-detail-form form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .user-detail-form form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .user-detail-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-detail-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* CourseDetail styling */
+  .course-detail {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* EnrolledUsers styling */
+  .enrolled-users ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .enrolled-users li {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+.home-page {
+  margin-top: 20px;
+}
+
+.hero-section {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.hero-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.featured-courses {
+  margin-bottom: 30px;
+}
+
+.featured-courses h2 {
+  margin-bottom: 20px;
+}
+
+.featured-courses ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-courses ul li {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.featured-courses ul li h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.featured-courses ul li p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.featured-courses ul li button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.featured-courses ul li button:hover {
+  background-color: #218838;
+}
+.enrolled-courses {
+  margin-top: 30px;
+}
+
+.enrolled-courses h2 {
+  margin-bottom: 20px;
+}
+
+.enrolled-courses ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.enrolled-courses ul li {
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.enrolled-courses ul li:hover {
+  color: #007bff;
+}
+
+.para{
+  display: flex;
+  justify-content: center;
+}
+
+.banner{
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+}

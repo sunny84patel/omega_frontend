@@ -1,0 +1,21 @@
+   .enrolled-users {
+    margin-top: 20px;
+  }
+  
+  .enrolled-users ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .enrolled-users li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .enrolled-users h3 {
+    margin-top: 0;
+  }
+  

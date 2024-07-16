@@ -1,0 +1,51 @@
+/* CourseList.css */
+
+.course-list {
+    margin: 20px;
+  }
+  
+  .course-list h2 {
+    color: #333;
+  }
+  
+  .course-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-list ul li {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .course-list ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .course-list ul li h3 {
+    color: #555;
+  }
+  
+  .course-list ul li p {
+    color: #777;
+  }
+  
+  .course-list ul li button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .course-list ul li button:hover {
+    background-color: #555;
+  }
+  
