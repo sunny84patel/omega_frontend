@@ -9,8 +9,8 @@ const CourseDetail = ({ course }) => {
       <p>{course.description}</p>
       <h3>Course Content</h3>
       <ul>
-        {course.content.map((item, index) => (
-          <li key={index}>{item}</li>
+        {course.content.map((it) => (
+          <li>{it}</li>
         ))}
       </ul>
     </div>

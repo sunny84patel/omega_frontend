@@ -3,13 +3,11 @@
 .user-detail-form {
     margin: 20px;
     padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
   }
   
   .user-detail-form h2 {
     color: #333;
+    margin-left: 570px;
   }
   
   .user-detail-form form {

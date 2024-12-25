@@ -4,7 +4,7 @@ import './CourseList.css';
 const CourseList = ({ courses, onEnroll }) => {
   return (
     <div className="course-list">
-      <h2>Courses</h2>
+      <h2>Available Courses</h2>
       <ul>
         {courses.map(course => (
           <li key={course.id}>

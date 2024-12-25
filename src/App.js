@@ -5,28 +5,51 @@ import CourseDetail from './course-detail/CourseDetail';
 import UserDetailForm from './user-detail/UserDetailForm';
 import EnrolledUsers from './enrolled-user/EnrolledUsers';
 import './App.css';
+import computer1 from './assets/computer1.png'
+import data from './assets/data1.png'
+import business from './assets/bussiness1.png'
+import social from './assets/social1.png'
+import biology from './assets/biology1.png'
+import banner from './assets/layer.png'
+import back from './assets/banner_new.png'
 
 const App = () => {
   const [courses] = useState([
     {
       id: 1,
-      title: 'Course 1',
-      description: 'Description of Course 1',
-      content: ['Introduction', 'Chapter 1', 'Chapter 2']
+      title: 'Computer Science',
+      description: 'This is a course for learning Computer Science',
+      content: ['Introduction', 'Chapter 1', 'Chapter 2'],
+      image: computer1
     },
     {
       id: 2,
-      title: 'Course 2',
-      description: 'Description of Course 2',
-      content: ['Introduction', 'Lesson 1', 'Lesson 2']
+      title: 'Data Analysis & Statistics',
+      description: 'This is a course for learning Data Analysis & Statistics',
+      content: ['Introduction', 'Lesson 1', 'Lesson 2'],
+      image: data
     },
     {
       id: 3,
-      title: 'Course 3',
-      description: 'Description of Course 3',
-      content: ['Introduction', 'Lesson 1', 'Lesson 2']
+      title: 'Business & Management',
+      description: 'This is a course for learning Business & Management',
+      content: ['Introduction', 'Lesson 1', 'Lesson 2'],
+      image: business
     },
-   
+    {
+      id: 4,
+      title: 'Social Sciences',
+      description: 'This is a course for learning Social Sciences',
+      content: ['Introduction', 'Lesson 1', 'Lesson 2'],
+      image: social
+    },
+    {
+      id: 5,
+      title: 'Biology & Life Sciences',
+      description: 'This is a course for learning Biology & Life Sciences',
+      content: ['Introduction', 'Lesson 1', 'Lesson 2'],
+      image: biology
+    },
   ]);
 
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -69,23 +92,27 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <div className="home-page">
-
               <div className="hero-section">
-                <h1>Welcome to the Course Website</h1>
+                <div className='hero1'>
+                <h1 className='heading'>Your Courses</h1>
                 <p className='para'>Empower yourself with knowledge and skills that matter. Start your learning journey today!</p>
-  
+                </div>
+                <img className='header' src={banner} alt=''></img>
+
+                <img className='back' src={back} alt=''></img>
               </div>
               <div className="featured-courses">
                 <h2 className='para'>Featured Courses</h2>
-                <ul>
-                  {courses.slice(0, 3).map(course => (
-                    <li key={course.id}>
+                <div className="course-grid">
+                  {courses.map(course => (
+                    <div key={course.id} className="course-card">
+                      <img src={course.image} alt={course.title} className="course-image" />
                       <h3>{course.title}</h3>
                       <p>{course.description}</p>
                       <Link to="/courses" className="cta-button">Enroll Now</Link>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
           } />

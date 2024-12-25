@@ -1,7 +1,4 @@
 
-
-
-
 import React, { useState } from 'react';
 import './UserDetailForm.css';
 
@@ -20,7 +17,7 @@ const UserDetailForm = ({ course, onSubmit }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/enrolledUsers', {
+      const response = await fetch('http://localhost:3000/api/enrolledUsers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
